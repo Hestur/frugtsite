@@ -3,6 +3,16 @@ body{
     
 }
 
+.imgcover{
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+
+
+}
+
 #gridlayout{
     width: 100%;
     height: 100vh;
@@ -15,6 +25,9 @@ body{
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 3fr 2fr;
 
+    background-image: url(/img/fruits.png);
+    
+       
 }
 
 #leftnav{
@@ -30,4 +43,12 @@ body{
     grid-row: 1/-1;
 
     background-color: black;
+
+    display: grid;
+
+    width: 100%;
+    height: auto;
+    
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: auto; 
 }
